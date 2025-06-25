@@ -1,18 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import Home from './Pages/Home'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ROUTER_PAGE } from './Router/AppRouter';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <body>
-        <h1 class="text-3xl font-bold underline">
-          Hello world!
-        </h1>
-      </body>
+         <Home />
+           {/* <RouterProvider router={ROUTER_PAGE}/> */}
     </>
   )
 }
