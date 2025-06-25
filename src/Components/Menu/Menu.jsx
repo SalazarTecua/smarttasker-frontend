@@ -8,9 +8,9 @@ const Menu = () => {
            <UserProfile/>
             {/* Navigation */}
             <nav className="flex-1 space-y-2">
-                <NavItem icon={<Home />} title="Dashboard" active />
-                <NavItem icon={<PieChart />} title="Analíticas" />
-                <NavItem icon={<CheckSquare />} title="Tareas" badge="15" />
+                <NavItem icon={<Home />} title="Dashboard" active url=""/>
+                {/* <NavItem icon={<PieChart />} title="Analíticas" /> */}
+                <NavItem icon={<CheckSquare />} title="Tareas" badge="15" url="tareas" />
                 <NavItem icon={<Calendar />} title="Eventos" />
                 <NavItem icon={<Settings />} title="Configuración" />
             </nav>
