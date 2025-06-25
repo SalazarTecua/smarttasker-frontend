@@ -8,8 +8,7 @@ function App() {
 
   return (
     <>
-         <Home />
-           {/* <RouterProvider router={ROUTER_PAGE}/> */}
+            <RouterProvider router={ROUTER_PAGE} />
     </>
   )
 }

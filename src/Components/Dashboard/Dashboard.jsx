@@ -1,1 +1,10 @@
-export default function Dashboard(second) {third}
+export default function Dashboard() {
+
+    return( 
+        <>
+         <li>
+            hola
+         </li>
+        </>
+    )
+}
