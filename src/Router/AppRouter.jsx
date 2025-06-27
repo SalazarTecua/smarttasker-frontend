@@ -11,8 +11,8 @@ export const ROUTER_PAGE = createBrowserRouter([
     element: <Home />,
     errorElement: <ErrorPage />,
     children: [
-      { index: true, element: <Dashboard/> },
-      { path: "tareas", element: <Content/>}
+      {path: "Dashboard", element: <Dashboard/> },
+      { path: "Tareas", element: <Content/>}
     ]
   }
 ]);
