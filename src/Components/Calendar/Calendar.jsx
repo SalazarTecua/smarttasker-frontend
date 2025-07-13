@@ -1,1 +1,10 @@
-export default function Calendar(second) {third}
+export default function Calendar() {
+
+    return (
+        <>
+        <div>
+            <p>Calendario</p>
+        </div>
+        </>
+    )
+}

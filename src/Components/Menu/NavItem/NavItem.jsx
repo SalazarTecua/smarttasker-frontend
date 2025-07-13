@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export default function NavItem({ icon, title, badge, color = "text-[#d0d0e7]", url }) {
     return (
         <NavLink
-            to={`/${url}`}
+            to={`${url}`}
             className={({ isActive }) => 
                 `group flex items-center justify-between gap-3 ${color} hover:text-white hover:bg-[#2a2a4a] px-4 py-3 rounded-xl transition-all duration-300 ${
                     isActive ? 'bg-[#2a2a4a] text-white' : ''

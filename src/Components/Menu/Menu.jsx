@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 
-export default function Menu(second) {
+export default function Menu() {
 
 const [isActive, setActive] =  useState(true); 
 
@@ -24,7 +24,7 @@ const handleActive =() => {
                 <NavItem icon={<Home />} title="Dashboard" url="Dashboard"  active={isActive} />
                 {/* <NavItem icon={<PieChart />} title="Analíticas" /> */}
                 <NavItem icon={<CheckSquare />} title="Tareas" badge="15" url="Tareas" active={isActive} />
-                <NavItem icon={<Calendar />} title="Calendario" />
+                <NavItem icon={<Calendar />} title="Calendario" url="Calendario" active={isActive}/>
                 <NavItem icon={<Settings />} title="Configuración"  />
             </nav>
 
