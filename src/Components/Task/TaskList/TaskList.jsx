@@ -4,7 +4,7 @@ import TaskInfo from "../TaskContent/TaskInfo/TaskInfo";
 import TaskProgress from "../TaskContent/TaskProgress/TaskProgress";
 
 
-export default function TaskList({}) {
+export default function TaskList({ }) {
 
 
     const tasks = [
@@ -58,27 +58,34 @@ export default function TaskList({}) {
         }
     ];
 
- 
+
 
     return (
         <>
-            {tasks.map(task => (
-                <div
-                    key={task.id}
-                    className="min-h-[250px] bg-[#181824] border border-[#252538] rounded-xl p-5 hover:border-[#8b5cf6] transition-all duration-300 hover:shadow-[0_0_20px_-10px_rgba(139,92,246,0.5)] flex flex-col"
-                >
-                    {/* Contenido de la tarjeta */}
-                    <div className="flex-1 flex flex-col">
-                        {/* Header de la tarjeta */}
-                        <TaskHeader task={task} />
-                        {/* Barra de progreso */}
-                        <TaskProgress task={task}/>
-                        {/* Meta información */}
-                        <TaskInfo task={task}/>
 
-                    </div>
+            <div className="flex-1 p-6 overflow-y-auto custom-scrollbar">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    {tasks.map(task => (
+                        <div
+                            key={task.id}
+                            className="min-h-[250px] bg-[#181824] border border-[#252538] rounded-xl p-5 hover:border-[#8b5cf6] transition-all duration-300 hover:shadow-[0_0_20px_-10px_rgba(139,92,246,0.5)] flex flex-col"
+                        >
+                            {/* Contenido de la tarjeta */}
+                            <div className="flex-1 flex flex-col">
+                                {/* Header de la tarjeta */}
+                                <TaskHeader task={task} />
+                                {/* Barra de progreso */}
+                                <TaskProgress task={task} />
+                                {/* Meta información */}
+                                <TaskInfo task={task} />
+
+                            </div>
+                        </div>
+                    ))}
+
                 </div>
-            ))}
+            </div>
+
         </>
     );
 

@@ -25,7 +25,7 @@ const handleActive =() => {
                 {/* <NavItem icon={<PieChart />} title="Analíticas" /> */}
                 <NavItem icon={<CheckSquare />} title="Tareas" badge="15" url="Tareas" active={isActive} />
                 <NavItem icon={<Calendar />} title="Calendario" url="Calendario" active={isActive}/>
-                <NavItem icon={<Settings />} title="Configuración"  />
+                <NavItem icon={<Settings />} title="Configuración"  url="Ajustes" />
             </nav>
 
             {/* Footer */}
